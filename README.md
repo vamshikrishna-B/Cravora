@@ -1,3 +1,3 @@
-# mini ecommerce
-ecommerce website all products available like a mini store
+# food delivery application cravora
+order now on cravora and make your tummy full
 
