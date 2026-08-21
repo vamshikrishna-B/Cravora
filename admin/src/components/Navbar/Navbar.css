@@ -4,9 +4,15 @@
     align-items: center;
     padding: 8px 4%;
 }
-.navbar .logo{
-    width: max(10%,80px);
+
+.brand-name {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -0.08em;
+    color: #ff5f3b;
+    line-height: 1;
 }
+
 .navbar .profile{
     width: 40px;
 }

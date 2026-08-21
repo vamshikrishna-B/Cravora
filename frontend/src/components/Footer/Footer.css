@@ -23,6 +23,15 @@
   align-items: start;
   gap: 20px;
 }
+
+.footer-brand {
+  font-size: 2rem;
+  font-weight: 900;
+  letter-spacing: -0.08em;
+  color: #ff5f3b;
+  line-height: 1;
+}
+
 .footer-content-left li,
 .footer-content-center li,
 .footer-content-right li {

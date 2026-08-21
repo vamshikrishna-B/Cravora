@@ -1,11 +1,8 @@
-# CRAVORA - Food Ordering Website
+# cravora - Food Ordering Website
 
-This repository hosts the source code for TOMATO, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
+This repository hosts the source code for CRAVORA, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
 
-## Demo
 
-- User Panel: [https://food-delivery-frontend-s2l9.onrender.com/](https://food-delivery-frontend-s2l9.onrender.com/)
-- Admin Panel: [https://food-delivery-admin-wrme.onrender.com/](https://food-delivery-admin-wrme.onrender.com/)
 
 ## Features
 
@@ -46,12 +43,12 @@ This repository hosts the source code for TOMATO, a dynamic food ordering websit
 Clone the project
 
 ```bash
-    git clone https://github.com/Mshandev/Food-Delivery
+    git clone https://github.com/vamshikrishna.B/Cravora
 ```
 Go to the project directory
 
 ```bash
-    cd Food-Delivery
+    cd Cravora
 ```
 Install dependencies (frontend)
 
