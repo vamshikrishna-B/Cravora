@@ -9,11 +9,14 @@ import orderRouter from "./routes/orderRoute.js";
 
 // app config
 const app = express();
-const port =process.env.PORT || 4000;
+const port = process.env.PORT || 4000;
 
 //middlewares
 app.use(express.json());
-app.use(cors());
+
+app.use(cors({
+  origin: "https://cravorafoodee-mnn97v6j9-vamshikrishna-b.vercel.app"
+}));
 
 // DB connection
 connectDB();
