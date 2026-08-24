@@ -1,123 +1,292 @@
-# cravora - Food Ordering Website
+# Cravora - Food Ordering Website 🍕
 
-This repository hosts the source code for CRAVORA, a dynamic food ordering website built with the MERN Stack. It offers a user-friendly platform for seamless online food ordering.
+This repository hosts the source code for **CRAVORA**, a dynamic food ordering website built using the **MERN Stack**. It provides a user-friendly platform for online food ordering with separate user and admin panels.
 
+## 🚀 Live Application
 
+**Frontend:**
+https://cravorafoodee-mnn97v6j9-vamshikrishna-b.vercel.app
 
-## Features
+**Backend API:**
+https://cravora-v3nv.onrender.com
 
-- User Panel
-- Admin Panel
-- JWT Authentication
-- Password Hashing with Bcrypt
-- Stripe Payment Integration
-- Login/Signup
-- Logout
-- Add to Cart
-- Place Order
-- Order Management
-- Products Management
-- Filter Food Products
-- Login/Signup
-- Authenticated APIs
-- REST APIs
-- Role-Based Identification
-- Beautiful Alerts
+---
 
-## Screenshots
+## ✨ Features
+
+### User Panel
+
+* User Registration and Login
+* JWT Authentication
+* Password Hashing with Bcrypt
+* Browse Food Products
+* Filter Food Products
+* Add to Cart
+* Place Orders
+* Stripe Payment Integration
+* Order Management
+* Logout
+* Authenticated APIs
+* REST APIs
+* Beautiful Alerts
+
+### Admin Panel
+
+* Admin Authentication
+* Products Management
+* Order Management
+* View and Manage Food Items
+* Role-Based Identification
+
+---
+
+## 📸 Screenshots
+
+### Hero Section
 
 ![Hero](https://i.ibb.co/59cwY75/food-hero.png)
-- Hero Section
+
+### Products Section
 
 ![Products](https://i.ibb.co/JnNQPyQ/food-products.png)
-- Products Section
+
+### Cart Page
 
 ![Cart](https://i.ibb.co/t2LrQ8p/food-cart.png)
-- Cart Page
+
+### Login Popup
 
 ![Login](https://i.ibb.co/s6PgwkZ/food-login.png)
-- Login Popup
 
-## Run Locally
+---
 
-Clone the project
+## 🏗️ Project Structure
 
-```bash
-    git clone https://github.com/vamshikrishna.B/Cravora
-```
-Go to the project directory
-
-```bash
-    cd Cravora
-```
-Install dependencies (frontend)
-
-```bash
-    cd frontend
-    npm install
-```
-Install dependencies (admin)
-
-```bash
-    cd admin
-    npm install
-```
-Install dependencies (backend)
-
-```bash
-    cd backend
-    npm install
-```
-Setup Environment Vaiables
-
-```Make .env file in "backend" folder and store environment Variables
-  JWT_SECRET=YOUR_SECRET_TEXT
-  SALT=YOUR_SALT_VALUE
-  MONGO_URL=YOUR_DATABASE_URL
-  STRIPE_SECRET_KEY=YOUR_KEY
- ```
-
-Setup the Frontend and Backend URL
-   - App.jsx in Admin folder
-      const url = YOUR_BACKEND_URL
-     
-  - StoreContext.js in Frontend folder
-      const url = YOUR_BACKEND_URL
-
-  - orderController in Backend folder
-      const frontend_url = YOUR_FRONTEND_URL 
-
-Start the Backend server
-
-```bash
-    nodemon server.js
+```text
+Cravora/
+│
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── admin/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+└── backend/
+    ├── controllers/
+    ├── models/
+    ├── routes/
+    ├── middleware/
+    ├── server.js
+    └── package.json
 ```
 
-Start the Frontend server
+---
+
+## ⚙️ Run Locally
+
+### 1. Clone the Project
 
 ```bash
-    npm start
+git clone https://github.com/vamshikrishna.B/Cravora
 ```
 
-Start the Backend server
+Go to the project directory:
 
 ```bash
-    npm start
+cd Cravora
 ```
-## Tech Stack
-* [React](https://reactjs.org/)
-* [Node.js](https://nodejs.org/en)
-* [Express.js](https://expressjs.com/)
-* [Mongodb](https://www.mongodb.com/)
-* [Stripe](https://stripe.com/)
-* [JWT-Authentication](https://jwt.io/introduction)
-* [Multer](https://www.npmjs.com/package/multer)
 
-## Deployment
+---
 
-The application is deployed on Render.
+### 2. Install Frontend Dependencies
 
-## Contributing
+```bash
+cd frontend
+npm install
+```
+
+---
+
+### 3. Install Admin Dependencies
+
+```bash
+cd ../admin
+npm install
+```
+
+---
+
+### 4. Install Backend Dependencies
+
+```bash
+cd ../backend
+npm install
+```
+
+---
+
+## 🔐 Environment Variables
+
+Create a `.env` file inside the **backend** folder:
+
+```env
+JWT_SECRET=YOUR_SECRET_TEXT
+SALT=YOUR_SALT_VALUE
+MONGO_URL=YOUR_DATABASE_URL
+STRIPE_SECRET_KEY=YOUR_STRIPE_SECRET_KEY
+```
+
+Do not upload your `.env` file or secret API keys to GitHub.
+
+---
+
+## 🔗 Frontend & Backend Configuration
+
+### Frontend
+
+The frontend communicates with the deployed backend:
+
+```javascript
+const url = "https://cravora-v3nv.onrender.com";
+```
+
+This configuration is located in:
+
+```text
+frontend/src/Context/StoreContext.jsx
+```
+
+### Admin Panel
+
+The admin panel also communicates with the deployed backend:
+
+```javascript
+const url = "https://cravora-v3nv.onrender.com";
+```
+
+This configuration is located in:
+
+```text
+admin/src/App.jsx
+```
+
+### Backend
+
+The backend uses the deployed frontend URL for frontend-related operations such as order/payment redirects:
+
+```javascript
+const frontend_url =
+  "https://cravorafoodee-mnn97v6j9-vamshikrishna-b.vercel.app";
+```
+
+This configuration is used in the backend order controller.
+
+---
+
+## ▶️ Start the Application Locally
+
+### Start Backend
+
+Inside the `backend` folder:
+
+```bash
+npm start
+```
+
+or during development:
+
+```bash
+nodemon server.js
+```
+
+### Start Frontend
+
+Inside the `frontend` folder:
+
+```bash
+npm start
+```
+
+### Start Admin Panel
+
+Inside the `admin` folder:
+
+```bash
+npm start
+```
+
+---
+
+## 🌐 Deployment
+
+The application is deployed using:
+
+### Frontend
+
+**Vercel**
+
+https://cravorafoodee-mnn97v6j9-vamshikrishna-b.vercel.app
+
+### Backend
+
+**Render**
+
+https://cravora-v3nv.onrender.com
+
+### Database
+
+**MongoDB**
+
+The backend connects to MongoDB using the `MONGO_URL` environment variable.
+
+---
+
+## 🛠️ Tech Stack
+
+* **React** - Frontend
+* **Node.js** - Backend runtime
+* **Express.js** - Backend framework
+* **MongoDB** - Database
+* **Stripe** - Payment integration
+* **JWT** - Authentication
+* **Bcrypt** - Password hashing
+* **Multer** - File/image handling
+* **REST APIs** - Frontend-backend communication
+
+---
+
+## 🔄 Application Architecture
+
+```text
+                    User
+                     │
+                     ▼
+          ┌─────────────────────┐
+          │   React Frontend    │
+          │       Vercel        │
+          └──────────┬──────────┘
+                     │
+                  REST API
+                     │
+                     ▼
+          ┌─────────────────────┐
+          │   Node + Express    │
+          │       Render        │
+          └──────────┬──────────┘
+                     │
+            ┌────────┴────────┐
+            ▼                 ▼
+      MongoDB Database      Stripe
+```
+
+---
+
+## 🤝 Contributing
 
 Contributions are always welcome!
-Just raise an issue, and we will discuss it.
+
+If you find an issue or have an improvement, feel free to raise an issue or submit a pull request.
