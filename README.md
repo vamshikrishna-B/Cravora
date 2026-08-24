@@ -5,8 +5,7 @@ This repository hosts the source code for **CRAVORA**, a dynamic food ordering w
 ## 🚀 Live Application
 
 **Frontend:**
-https://cravorafoodee-mnn97v6j9-vamshikrishna-b.vercel.app
-
+https://cravorafoodee.vercel.app
 **Backend API:**
 https://cravora-v3nv.onrender.com
 
